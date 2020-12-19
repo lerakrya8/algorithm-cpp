@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lerakrya/algorithm/Task3-1/ArcGraph.h
+IGraph.h
+/home/lerakrya/algorithm/Task3-1/IGraph.h
+vector
+-
+
+/home/lerakrya/algorithm/Task3-1/IGraph.h
+vector
+-
+
+/home/lerakrya/algorithm/Task3-1/ListGraph.h
+IGraph.h
+/home/lerakrya/algorithm/Task3-1/IGraph.h
+
+/home/lerakrya/algorithm/Task3-1/MatrixGraph.h
+IGraph.h
+/home/lerakrya/algorithm/Task3-1/IGraph.h
+
+/home/lerakrya/algorithm/Task3-1/SetGraph.h
+IGraph.h
+/home/lerakrya/algorithm/Task3-1/IGraph.h
+set
+-
+
+/home/lerakrya/algorithm/Task3-1/main.cpp
+MatrixGraph.h
+/home/lerakrya/algorithm/Task3-1/MatrixGraph.h
+ListGraph.h
+/home/lerakrya/algorithm/Task3-1/ListGraph.h
+SetGraph.h
+/home/lerakrya/algorithm/Task3-1/SetGraph.h
+ArcGraph.h
+/home/lerakrya/algorithm/Task3-1/ArcGraph.h
+queue
+-
+iostream
+-
+

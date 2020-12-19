@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/SetGraph.dir/SetGraph.cpp.o  -o SetGraph 
