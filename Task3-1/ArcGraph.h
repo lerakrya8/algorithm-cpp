@@ -10,6 +10,7 @@
 
 class ArcGraph : public IGraph {
 public:
+    ArcGraph(const IGraph& igraph);
     ArcGraph(int n);
     void AddEdge(int from, int to) override;
 

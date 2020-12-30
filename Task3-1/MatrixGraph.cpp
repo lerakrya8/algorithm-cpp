@@ -1,5 +1,14 @@
 #include "MatrixGraph.h"
 
+MatrixGraph::MatrixGraph(const IGraph& igraph) {
+    for (size_t i = 0; i < igraph.VerticesCount(); ++i) {
+        std::vector<int> children = igraph.GetNextVertices(i);
+        for (size_t j = 0; j < children.size(); ++j) {
+            matrix[i][children[j]] = true;
+        }
+    }
+}
+
 MatrixGraph::MatrixGraph(int n) {
     matrix.resize(n);
     for(auto& v : matrix) {

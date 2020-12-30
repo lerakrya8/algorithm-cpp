@@ -1,6 +1,12 @@
 
 #include "ListGraph.h"
 
+ListGraph::ListGraph(const IGraph& igraph) {
+    for (size_t i = 0; i < igraph.VerticesCount(); ++i) {
+        list_graph[i] = igraph.GetNextVertices(i);
+    }
+}
+
 ListGraph::ListGraph(int n) {
     list_graph.resize(n);
 }

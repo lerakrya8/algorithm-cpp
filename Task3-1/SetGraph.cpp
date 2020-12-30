@@ -1,6 +1,16 @@
 
 #include "SetGraph.h"
 
+SetGraph::SetGraph(const IGraph& igraph){
+    set_graph.resize(igraph.VerticesCount());
+    for (size_t i = 0; i < igraph.VerticesCount(); ++i) {
+        std::vector<int> children = igraph.GetNextVertices(i);
+        for (auto& v : children) {
+            set_graph[i].insert(v);
+        }
+    }
+}
+
 SetGraph::SetGraph(int n) {
     set_graph.resize(n);
 }

@@ -9,6 +9,7 @@
 
 class MatrixGraph : public IGraph {
 public:
+    MatrixGraph(const IGraph& igraph);
     MatrixGraph(int n);
 
     void AddEdge(int from, int to) override;

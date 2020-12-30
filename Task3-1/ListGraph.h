@@ -9,6 +9,7 @@
 
 class ListGraph : public IGraph {
 public:
+    ListGraph(const IGraph& igraph);
     ListGraph(int n);
 
     void AddEdge(int from, int to) override;

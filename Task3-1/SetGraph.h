@@ -10,6 +10,7 @@
 
 class SetGraph : public IGraph {
 public:
+    SetGraph(const IGraph& igraph);
     SetGraph(int n);
 
     void AddEdge(int from, int to) override;

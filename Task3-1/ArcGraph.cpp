@@ -1,6 +1,14 @@
 
 #include "ArcGraph.h"
 
+ArcGraph::ArcGraph(const IGraph &igraph) {
+    for (size_t i = 0; i < igraph.VerticesCount(); ++i) {
+        std::vector<int> children = igraph.GetNextVertices(i);
+        for (size_t j = 0; j < children.size(); ++j) {
+            arc_graph.push_back({i, j});
+        }
+    }
+}
 
 ArcGraph::ArcGraph(int n) {
     arc_graph.reserve(n);

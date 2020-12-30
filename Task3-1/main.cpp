@@ -119,6 +119,7 @@ int main() {
     dfs(arc_graph, [](int v) {
         std::cout << v << " ";
     });
+
     std::cout << std::endl << "-----------" << std::endl;
     bfs(arc_graph, [](int v) {
         std::cout << v << " ";
